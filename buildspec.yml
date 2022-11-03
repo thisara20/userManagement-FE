@@ -13,7 +13,7 @@ phases:
       # copy the contents of /build to S3
       - aws s3 sync --delete build/ s3://usermanagementdev/
       # set the cache-control headers for service-worker.js to prevent
-      - aws cloudfront create-invalidation --distribution-id E1ODT0X13BUKJC --paths /index.html
+      - aws cloudfront create-invalidation --distribution-id E1P7R5W4FH1Q66 --paths /index.html
 artifacts:
   files:
     - '**/*'
